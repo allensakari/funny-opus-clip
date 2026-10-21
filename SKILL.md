@@ -26,7 +26,7 @@ description: 数据短视频全流程：给一个选题，问 4 个问题（风�
 | 2 | 脚本 | `script.py` / `timeline.py` + `脚本.md` | ⏸ 节点 ②：脚本 + 两种结尾 |
 | 3 | 配音（默认不配音，跳过） | `build/voice/` | |
 | 4 | 时间轴 + 配乐 | 时间轴、配乐 | |
-| 5 | 画面 + 混音 + QC | `build/video*.mp4`、`qc.txt`、`transqc.txt` | ⏸ 节点 ③：QC 0 个问题 + 样帧 + 草稿 |
+| 5 | 画面 + 混音 + QC | `build/video*.mp4`、`qc.txt`、`transqc.txt`、`beatqc.txt` | ⏸ 节点 ③：三份 QC 都 0 个问题 + 样帧 + 草稿 |
 | 6 | 成片（`formats` 里的每个画幅） | `发布/<片名>[_横版].mp4` + `.srt` | |
 | 7 | 封面（四个尺寸，不问） | `发布/封面_9x16 / 3x4 / 16x9 / 4x3.jpg` | |
 | 8 | 发布稿 + 吸粉 | `发布/发布稿.md`、`CREDITS.md`、`来源表.md`、`壁纸/` | ⏸ 节点 ④：全部素材 |
@@ -96,7 +96,10 @@ python ../../engine/episode.py init --topic "<选题>" --style <风格键> --voi
 
 ### 4. 时间轴与配乐
 
-- 配音：`engine/timeline.build(SEGMENTS, 'build/voice', beat, unit=2)`；切点落在半小节（需要精确卡点时落到 8 分音符）。不配音：按风格 STYLE.md，镜头卡在配乐的拍点上。
+- **先定拍子，再排画面**：配乐的 BPM 和第一个强拍定下来以后，所有镜头切换、转场中心、数字砸下、关键动作都排在 8 分音符网格上（`t = 第一个强拍 + k × 拍长 / 2`），不靠肉眼对。
+  - 配音：`engine/timeline.build(SEGMENTS, 'build/voice', beat, unit=2)`，切点落在半小节；旁白驱动的字幕出现时间不要求卡拍，但镜头和画面动作要卡。
+  - 不配音：按风格 STYLE.md，镜头表直接用拍子写（例如 `bar(n) + beat(k)`）。
+- **导出 `build/events.json`（必做，卡点 QC 的依据）**：从本期的镜头表 / cue 表生成，每个设计好的画面事件一条：`[{"t": 秒, "name": "镜头 / 转场 / 数字砸下 …", "dur": 转场或持续动作的长度}]`。镜头切换、转场（写中心时间和长度）、数字落定、闪光、变焦脉冲这类明显的画面动作都要登记；改了镜头表就重新导出。
 - **`music = "synth"`**：用风格自带的合成工具写本期配乐（数据讲述参考 `example` 期的 `audio.py`；印刷卡通 / 等距微缩用 `print_cartoon_audio.py`；其余见 STYLE.md）。先定 BPM 和段落情绪，再按段落写配器，情绪高点对准高潮段。
 - **`music = "library"`**：从 `music.toml` 按情绪和 BPM 选 2–3 首，`engine/beats.py <曲子>` 测拍，挑最贴的；把选中曲子写进 `episode.toml` 的 `music_track`，它的 `credit` 原文进 CREDITS 和发布稿。
 - 换曲比较时输出带后缀，**不覆盖**已有版本，落选版本归档到 `build/review/versions/`。
@@ -115,12 +118,18 @@ python ../../engine/episode.py init --topic "<选题>" --style <风格键> --voi
 **自动 QC（必须 0 个问题）**：
 - `python ../../engine/qc.py`（横版加 `--land`）：文字互相重叠、压在关键图形上、进入平台安全区、片尾仍有场景文字、出画。
 - `python ../../engine/transqc.py build/video.mp4`：单帧闪烁、淡出中亮度回升。有意的闪光用 `--ignore` 跳过，并在节点 ③ 逐条说明。
+- **卡点 QC（硬性要求）** `python ../../engine/beatqc.py build/video.mp4 --music build/music.wav`（纯配乐，对齐到成片时间轴；没有单独的配乐就用带音轨的视频）→ `build/beatqc.txt`，必须 0 个问题：
+  - `events.json` 里每个事件离 8 分音符网格不超过 max(35 ms, 1 帧)；
+  - 视频里每个单帧硬切按实际帧时间同样判定；
+  - 视频里每段多帧突变（快速转场、闪光、变焦）必须落在某个登记事件的窗口里，否则是「未登记的跳变」；
+  - 没有 `events.json` 直接算不通过。
+  - 不通过时**改画面时间或配乐，不改容差**；`--grid 4`（每拍）只在风格明确要求时用。确实不该卡拍的段落（黑场里的一句话）才用 `--ignore`，并在节点 ③ 逐条说明理由。
 
-**节点 ③ 给**：读音报告（配音时）+ 两份 QC + 样帧拼图 + 草混 / 草稿视频（`build/review/`）。
+**节点 ③ 给**：读音报告（配音时）+ 三份 QC（排版 / 转场 / 卡点）+ 样帧拼图 + 草混 / 草稿视频（`build/review/`）。
 
 ### 6. 成片
 
-- `formats` 里的每个画幅都再跑一次 QC 和转场 QC，都要 0 个问题。
+- `formats` 里的每个画幅都再跑一次排版 QC、转场 QC 和卡点 QC（`beatqc.py` 用成片和最终混音），三份都要 0 个问题才能交付。
 - `python ../../engine/finalize.py build/video.mp4 build/mix.wav 发布/<片名>.mp4`：−14 LUFS、细颗粒防色带、H.264 12 Mbps，同时出 `.srt`。
 - ffprobe 核对：竖版 1080×1920，横版 1920×1080。
 
@@ -156,6 +165,7 @@ python ../../engine/episode.py init --topic "<选题>" --style <风格键> --voi
 | 颜色编码 | 有「两方」的选题全片锁定一对颜色（profile `colors.pair`），含义从头到尾不变；品牌强调色只做强调 |
 | 色温叙事 | 铺垫段偏冷，转折 / 结论段回暖（`engine/grade.py`） |
 | 转场 | 优先共享元素变形（`engine/morph.py`）；硬切只留给大场景跳转 |
+| 卡点 | **硬性**：镜头切换、转场、数字砸下、关键动作全部落在配乐的 8 分音符网格上（±35 ms / 1 帧），`beatqc.py` 0 个问题才能进节点 ③ 和交付 |
 | 主题 | 太空 / 夜晚用 `dark`，生命 / 自然 / 社会用 `sand`（`SHUSHUO_THEME=sand`）；品牌点、标志、字体不变 |
 | 画面标注 | 每个关键数字下方标「机构 · 年份」 |
 | 素材 | 程序动画 + 明确可商用的公版素材（NASA、Wikimedia PD / CC BY 等）；**不用 AI 生成图像** |
