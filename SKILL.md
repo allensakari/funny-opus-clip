@@ -9,7 +9,7 @@ description: 数据短视频全流程：给一个选题，问 4 个问题（风�
 
 | 项 | 内容 |
 |---|---|
-| 根目录 `$ROOT` | 本 skill 的目录（即 GitHub 仓库 allensakari/opus-funny-clip 的克隆）：`engine/`、`skill/styles/`、`profiles/`、`assets/`；每期的工程放 `$ROOT/episodes/`（不入库） |
+| 根目录 `$ROOT` | 本 skill 的目录（即 GitHub 仓库 allensakari/funny-opus-clip 的克隆）：`engine/`、`skill/styles/`、`profiles/`、`assets/`；每期的工程放 `$ROOT/episodes/`（不入库） |
 | Python | `$ROOT/.venv/bin/python`（`uv sync`）；需要 ffmpeg |
 | 频道配置 | `profiles/<频道>/profile.toml`；用哪个由 `profiles/DEFAULT`（一行，默认 `example`）或 `STORY_PROFILE=<目录>` 决定。频道名、标志、配色、字体、合集、关注语（以及可选的 TTS）都在这里，**流程和引擎里不写死任何频道的东西** |
 | 密钥 | 只有用户主动要配音（或用 Lyria 配乐）时才需要，放 profile 的 `tts.env_file` 指向的 `.env`（不入库，模板 `.env.example`）。**只让用户自己编辑这个文件，不在对话里收密钥，不打印值**；`episode.py check` 只报变量名 |

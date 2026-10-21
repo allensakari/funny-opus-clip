@@ -1,4 +1,4 @@
-# opus-funny-clip
+# funny-opus-clip
 
 to create funny clip with claude opus
 
@@ -31,7 +31,7 @@ A Claude Code skill that turns one topic into a finished short data / science cl
 需要：macOS（Apple Silicon 上测试过；moderngl 需要 OpenGL 3.3+）、[uv](https://docs.astral.sh/uv/)、ffmpeg、Claude Code。
 
 ```bash
-git clone https://github.com/allensakari/opus-funny-clip.git ~/.claude/skills/funny-opus-clip
+git clone https://github.com/allensakari/funny-opus-clip.git ~/.claude/skills/funny-opus-clip
 cd ~/.claude/skills/funny-opus-clip
 uv sync
 .venv/bin/python engine/episode.py check     # 环境自检
