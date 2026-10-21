@@ -1,0 +1,863 @@
+# 免版权曲库清单（engine/episode.py check 和 skill 第 4 步读它）。曲子文件本身不入库，按 url 下载放到 assets/music/。
+# 每首：file、title、artist、license、url、credit（署名原文，进 CREDITS.md 和发布稿）；bpm 可选（engine/beats.py 测）；mood 可选，选曲时参考。
+# 加别的曲库（如 YouTube 音频库、Pixabay）照同样格式加 [[track]]，license 写清楚是否要求署名。
+
+[[track]]
+file = "Achilles.mp3"
+title = "Achilles"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Achilles》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Aggressor.mp3"
+title = "Aggressor"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Aggressor》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "All_This.mp3"
+title = "All This"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《All This》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Americana.mp3"
+title = "Americana"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Americana》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Aurea_Carmina.mp3"
+title = "Aurea Carmina"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Aurea Carmina》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Big_Mojo.mp3"
+title = "Big Mojo"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Big Mojo》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Black_Vortex.mp3"
+title = "Black Vortex"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Black Vortex》，incompetech.com，CC BY 4.0"
+bpm = 82.5
+
+[[track]]
+file = "Bleeping_Demo.mp3"
+title = "Bleeping Demo"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Bleeping Demo》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Burnt_Spirit.mp3"
+title = "Burnt Spirit"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Burnt Spirit》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Call_to_Adventure.mp3"
+title = "Call to Adventure"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Call to Adventure》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Chase.mp3"
+title = "Chase"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Chase》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Chase_Pulse_Faster.mp3"
+title = "Chase Pulse Faster"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Chase Pulse Faster》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Clash_Defiant.mp3"
+title = "Clash Defiant"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Clash Defiant》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Clenched_Teeth.mp3"
+title = "Clenched Teeth"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Clenched Teeth》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Constance.mp3"
+title = "Constance"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Constance》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Controlled_Chaos.mp3"
+title = "Controlled Chaos"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Controlled Chaos》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Corruption.mp3"
+title = "Corruption"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Corruption》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Crossing_the_Chasm.mp3"
+title = "Crossing the Chasm"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Crossing the Chasm》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Crusade_-_Heavy_Industry.mp3"
+title = "Crusade - Heavy Industry"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Crusade - Heavy Industry》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Curse_of_the_Scarab.mp3"
+title = "Curse of the Scarab"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Curse of the Scarab》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Cyborg_Ninja.mp3"
+title = "Cyborg Ninja"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Cyborg Ninja》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Dangerous.mp3"
+title = "Dangerous"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Dangerous》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Dark_Times.mp3"
+title = "Dark Times"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Dark Times》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Darkest_Child.mp3"
+title = "Darkest Child"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Darkest Child》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Darkling.mp3"
+title = "Darkling"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Darkling》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Death_and_Axes.mp3"
+title = "Death and Axes"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Death and Axes》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Decisions.mp3"
+title = "Decisions"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Decisions》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Deep_Haze.mp3"
+title = "Deep Haze"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Deep Haze》，incompetech.com，CC BY 4.0"
+bpm = 80.0
+
+[[track]]
+file = "Dragon_and_Toast.mp3"
+title = "Dragon and Toast"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Dragon and Toast》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Egmont_Overture.mp3"
+title = "Egmont Overture"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Egmont Overture》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Electrodoodle.mp3"
+title = "Electrodoodle"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Electrodoodle》，incompetech.com，CC BY 4.0"
+bpm = 80.0
+
+[[track]]
+file = "Enter_the_Party.mp3"
+title = "Enter the Party"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Enter the Party》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Epic_Unease.mp3"
+title = "Epic Unease"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Epic Unease》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Ethernight_Club.mp3"
+title = "Ethernight Club"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Ethernight Club》，incompetech.com，CC BY 4.0"
+bpm = 78.0
+
+[[track]]
+file = "Evening_of_Chaos.mp3"
+title = "Evening of Chaos"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Evening of Chaos》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Exhilarate.mp3"
+title = "Exhilarate"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Exhilarate》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Faceoff.mp3"
+title = "Faceoff"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Faceoff》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Failing_Defense.mp3"
+title = "Failing Defense"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Failing Defense》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Final_Count.mp3"
+title = "Final Count"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Final Count》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Firebrand.mp3"
+title = "Firebrand"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Firebrand》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Five_Armies.mp3"
+title = "Five Armies"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Five Armies》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Gathering_Darkness.mp3"
+title = "Gathering Darkness"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Gathering Darkness》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Ghostpocalypse_-_7_Master.mp3"
+title = "Ghostpocalypse - 7 Master"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Ghostpocalypse - 7 Master》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Glitter_Blast.mp3"
+title = "Glitter Blast"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Glitter Blast》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Grim_League.mp3"
+title = "Grim League"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Grim League》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Half_Mystery.mp3"
+title = "Half Mystery"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Half Mystery》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Harmful_or_Fatal.mp3"
+title = "Harmful or Fatal"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Harmful or Fatal》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Heavy_Interlude.mp3"
+title = "Heavy Interlude"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Heavy Interlude》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Hero_Down.mp3"
+title = "Hero Down"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Hero Down》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Heroic_Age.mp3"
+title = "Heroic Age"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Heroic Age》，incompetech.com，CC BY 4.0"
+bpm = 130.0
+
+[[track]]
+file = "Hiding_Your_Reality.mp3"
+title = "Hiding Your Reality"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Hiding Your Reality》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Hitman.mp3"
+title = "Hitman"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Hitman》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Hot_Pursuit.mp3"
+title = "Hot Pursuit"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Hot Pursuit》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Hyperfun.mp3"
+title = "Hyperfun"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Hyperfun》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Impact_Allegretto.mp3"
+title = "Impact Allegretto"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Impact Allegretto》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Impact_Andante.mp3"
+title = "Impact Andante"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Impact Andante》，incompetech.com，CC BY 4.0"
+bpm = 91.0
+
+[[track]]
+file = "Impact_Intermezzo.mp3"
+title = "Impact Intermezzo"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Impact Intermezzo》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Impact_Lento.mp3"
+title = "Impact Lento"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Impact Lento》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Industrial_Revolution.mp3"
+title = "Industrial Revolution"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Industrial Revolution》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Interloper.mp3"
+title = "Interloper"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Interloper》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Intrepid.mp3"
+title = "Intrepid"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Intrepid》，incompetech.com，CC BY 4.0"
+bpm = 89.5
+
+[[track]]
+file = "Killers.mp3"
+title = "Killers"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Killers》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Killing_Time.mp3"
+title = "Killing Time"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Killing Time》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Lasting_Hope.mp3"
+title = "Lasting Hope"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Lasting Hope》，incompetech.com，CC BY 4.0"
+bpm = 100.0
+
+[[track]]
+file = "Latin_Industries.mp3"
+title = "Latin Industries"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Latin Industries》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Lord_of_the_Land.mp3"
+title = "Lord of the Land"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Lord of the Land》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Majestic_Hills.mp3"
+title = "Majestic Hills"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Majestic Hills》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Malicious.mp3"
+title = "Malicious"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Malicious》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Mechanolith.mp3"
+title = "Mechanolith"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Mechanolith》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Minima.mp3"
+title = "Minima"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Minima》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Mourning_Song.mp3"
+title = "Mourning Song"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Mourning Song》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Movement_Proposition.mp3"
+title = "Movement Proposition"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Movement Proposition》，incompetech.com，CC BY 4.0"
+bpm = 126.0
+
+[[track]]
+file = "Neon_Laser_Horizon.mp3"
+title = "Neon Laser Horizon"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Neon Laser Horizon》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Newer_Wave.mp3"
+title = "Newer Wave"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Newer Wave》，incompetech.com，CC BY 4.0"
+bpm = 73.3
+
+[[track]]
+file = "Night_of_Chaos.mp3"
+title = "Night of Chaos"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Night of Chaos》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Noble_Race.mp3"
+title = "Noble Race"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Noble Race》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Obliteration.mp3"
+title = "Obliteration"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Obliteration》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Oppressive_Gloom.mp3"
+title = "Oppressive Gloom"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Oppressive Gloom》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Ossuary_6_-_Air.mp3"
+title = "Ossuary 6 - Air"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Ossuary 6 - Air》，incompetech.com，CC BY 4.0"
+bpm = 79.2
+
+[[track]]
+file = "Phantom_from_Space.mp3"
+title = "Phantom from Space"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Phantom from Space》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Plans_in_Motion.mp3"
+title = "Plans in Motion"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Plans in Motion》，incompetech.com，CC BY 4.0"
+bpm = 134.0
+
+[[track]]
+file = "Prelude_and_Action.mp3"
+title = "Prelude and Action"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Prelude and Action》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Pump.mp3"
+title = "Pump"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Pump》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Raving_Energy.mp3"
+title = "Raving Energy"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Raving Energy》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Rising_Game.mp3"
+title = "Rising Game"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Rising Game》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Rocket.mp3"
+title = "Rocket"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Rocket》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Rocket_Power.mp3"
+title = "Rocket Power"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Rocket Power》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Rynos_Theme.mp3"
+title = "Rynos Theme"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Rynos Theme》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Satiate.mp3"
+title = "Satiate"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Satiate》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Shiny_Tech.mp3"
+title = "Shiny Tech"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Shiny Tech》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Space_Fighter_Loop.mp3"
+title = "Space Fighter Loop"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Space Fighter Loop》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Stormfront.mp3"
+title = "Stormfront"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Stormfront》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Strength_of_the_Titans.mp3"
+title = "Strength of the Titans"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Strength of the Titans》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Take_the_Lead.mp3"
+title = "Take the Lead"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Take the Lead》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Tempting_Secrets.mp3"
+title = "Tempting Secrets"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Tempting Secrets》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "The_Complex.mp3"
+title = "The Complex"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《The Complex》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "The_Descent.mp3"
+title = "The Descent"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《The Descent》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "The_Path_of_the_Goblin_King.mp3"
+title = "The Path of the Goblin King"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《The Path of the Goblin King》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Thunderbird.mp3"
+title = "Thunderbird"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Thunderbird》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Truth_of_the_Legend.mp3"
+title = "Truth of the Legend"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Truth of the Legend》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Undaunted.mp3"
+title = "Undaunted"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Undaunted》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Unholy_Knight.mp3"
+title = "Unholy Knight"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Unholy Knight》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Unity.mp3"
+title = "Unity"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Unity》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Unlight.mp3"
+title = "Unlight"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Unlight》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Volatile_Reaction.mp3"
+title = "Volatile Reaction"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Volatile Reaction》，incompetech.com，CC BY 4.0"
+
+[[track]]
+file = "Voltaic.mp3"
+title = "Voltaic"
+artist = "Kevin MacLeod"
+license = "CC BY 4.0"
+url = "https://incompetech.com"
+credit = "Kevin MacLeod《Voltaic》，incompetech.com，CC BY 4.0"

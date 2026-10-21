@@ -1,0 +1,69 @@
+# 示例频道配置。换成自己的频道：复制本目录为 profiles/<名字>/，改 [channel]，跑 python engine/make_marks.py 生成标志，
+# 再把 profiles/DEFAULT 改成 <名字>（或者用 STORY_PROFILE=<目录> 临时指定）。
+# 颜色 0–255 写成 [r, g, b]，0–1 写成小数。相对路径：marks 相对本目录，fonts 相对仓库根目录。
+
+[channel]
+name = "示例频道"
+name_en = "EXAMPLE CHANNEL"
+follow_line = "关注我，每期一个数字，重新看一遍世界。"
+credits_line = "本视频由 Claude 制作"
+collections = ["宇宙篇", "地球篇", "你自己", "数学与概率", "身边的数字"]
+platforms = ["douyin", "xiaohongshu", "bilibili", "youtube"]
+
+[channel.youtube_playlists]              # 合集 → YouTube 播放列表名（可留空）
+
+[colors]
+accent = [255, 122, 89]                  # 品牌点 / 强调色
+bg = [8, 11, 17]
+ink = [243, 244, 246]
+grey = [0.62, 0.64, 0.68]
+red = [0.94, 0.30, 0.24]
+cyan = [0.45, 0.85, 1.0]
+pair = [[1.0, 0.62, 0.30], [0.30, 0.80, 0.85]]   # 一期里「两方」的默认颜色
+
+[colors.sand]                            # 浅色主题（SHUSHUO_THEME=sand）
+bg = [0.925, 0.894, 0.835]
+ink = [0.11, 0.10, 0.09]
+grey = [0.42, 0.40, 0.37]
+accent_text = [0.78, 0.30, 0.17]         # 强调色在沙色底上写字用的深一号
+cyan = [0.12, 0.47, 0.62]
+
+[fonts]
+dir = "assets/fonts"
+cjk = "SourceHanSansCN-{w}.otf"
+num = "BarlowCondensed-{w}.ttf"
+mark_en = "BarlowCondensed-ExtraBold.ttf"
+
+# 标志：python engine/make_marks.py 按频道名生成文字标志并填好下面的坐标；用自己的标志图时照 profiles/README.md 填
+[marks]
+dir = "marks"
+watermark = "wm.png"
+wm_dot = [104, 153.0]
+wm_bbox = [44, 93]
+wm_letter_end = 172
+wm_name_end = 768
+end_logo = "logo.png"
+end_logo_h = "logo_h.png"               # 横排单色标志（印刷卡通 / 等距微缩的片尾，按墨色着色）
+logo_dot = [1578.5, 866.5]
+logo_dot_r = 38.5
+logo_center_x = 958.5
+logo_name_x = 290
+
+[marks.en]
+watermark = "wm_en.png"
+end_logo = "logo_en.png"
+
+# 旁白（默认不配音，只有选了「要配音」才用）。edge 不需要密钥；要用 gemini / openai 时把 provider 改掉，密钥写进 .env
+[tts]
+provider = "edge"                        # engine/tts.py：edge | gemini | openai
+env_file = ".env"
+default_voice = "Y1"
+tempo = 1.0
+style = "科普短视频旁白：语速适中、干脆利落、有画面感，句间停顿短"
+style_en = "Documentary narration: calm, confident, clear, moderate pace with short pauses between sentences"
+pronunciation = "用标准普通话，不加儿化音"
+
+[tts.voices]                             # id = 服务商的音色名；env = .env 里存音色 ID 的变量名
+Y1 = { id = "zh-CN-YunxiNeural" }
+X1 = { id = "zh-CN-XiaoxiaoNeural" }
+E1 = { id = "en-US-GuyNeural", lang = "en" }

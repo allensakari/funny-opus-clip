@@ -1,0 +1,71 @@
+# 风格能力表：开工问答（skill 第 0 步）按这张表出选项、拦下做不到的组合，答案写进期目录的 episode.toml。
+# voice     = "required" 必须配音（时间轴跟着旁白走）| "none" 不支持配音（时间轴跟着配乐走）
+# native    = 原生画幅；extra = 可以另出的画幅；both = 横竖两版是同一个世界坐标、一起出
+# music     = 支持的配乐来源：library（免版权曲库，assets/music/music.toml）| synth（程序合成）| lyria（Gemini Lyria，按首收费，商用条款未明确）
+# duration  = 默认时长（秒）；long = 可选长版
+# example   = 参考期 / 模板
+
+[data]
+name = "数据讲述"
+pitch = "配音 + 数字跳格字幕 + 角落品牌点，skia / moderngl 程序动画，深色或沙色主题"
+fits = "一手数据、规模感、需要旁白讲清楚的选题"
+dir = ""                                   # 没有 STYLE.md，规则就在 SKILL.md
+voice = "required"
+native = "9x16"
+extra = ["16x9"]
+music = ["library", "synth"]
+duration = 90
+long = 200
+example = "skill/styles/data/templates/S005"
+
+[print-cartoon]
+name = "印刷卡通"
+pitch = "米色纸面 + 孔版颗粒，胶囊小人靠眼神演戏，120 BPM 动作卡，纯音乐 + 中英双字幕"
+fits = "生活里的概率、排队 / 等待、选择、比较、「为什么总是我」"
+dir = "print-cartoon"
+voice = "none"
+native = "16x9"
+extra = ["9x16"]
+both = true
+music = ["synth", "lyria", "library"]
+duration = 90
+long = 120
+example = "skill/styles/print-cartoon/templates/S015"
+
+[cosmic-real]
+name = "写实宇宙"
+pitch = "光线追踪写实 3D 宇宙 + 真实照片，无配音，镜头卡在一首情绪曲的拍点上，黑场一句话收尾"
+fits = "宇宙、时间尺度、地球和太阳的命运、人类在宇宙里的位置"
+dir = "cosmic-real"
+voice = "none"
+native = "16x9"
+extra = []
+music = ["synth", "library", "lyria"]
+duration = 130
+long = 200
+example = "skill/styles/cosmic-real/templates/S012"
+
+[particle-math]
+name = "光点粒子"
+pitch = "深色背景上的彩虹光点，一镜到底，上一个数学对象直接变形成下一个，可做无缝循环"
+fits = "公式、算法、概率分布、分形、混沌"
+dir = "particle-math"
+voice = "none"
+native = "16x9"
+extra = []
+music = ["synth", "library"]
+duration = 150
+example = "skill/styles/particle-math/templates/math-beauty-v2"
+
+[iso-diorama]
+name = "等距微缩"
+pitch = "等距视角的微缩世界，移轴虚化，纯音乐 + 中英双字幕（新风格，规则只来自一段样片）"
+fits = "产业、资源、城市、供应链这类「一个世界里很多东西在动」的选题"
+dir = "iso-diorama"
+voice = "none"
+native = "16x9"
+extra = ["9x16"]
+both = true
+music = ["synth", "lyria", "library"]
+duration = 90
+example = "skill/styles/iso-diorama/templates/S019_style_test"

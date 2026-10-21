@@ -1,0 +1,23 @@
+# secrets — never commit
+.env
+*.env
+!takes*.env
+
+# environment / caches
+.venv/
+__pycache__/
+.DS_Store
+engine/cache/
+
+# your work: episodes and their outputs stay local
+episodes/*
+!episodes/.gitkeep
+
+# media (music files are downloaded per music.toml; references are not redistributed)
+assets/music/*
+!assets/music/music.toml
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.ogg
